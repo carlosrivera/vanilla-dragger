@@ -1,7 +1,16 @@
-Simple drag
+Vanilla HTML Drag Support
 ==================
-2016-09-02
 
+This in an updated & refactored version of [lingtalfi/simpledrag](https://github.com/lingtalfi/simpledrag) that supports typing, as the original code works like a charm but the lack of type definitions are being problematic in modern environments. All functionality and documentation from original base remains intact.
+
+To install the library from `npm` run:
+
+```shell
+npm install --save vanilla-dragger
+```
+
+
+## Original documentation
 
 A simple drag function in vanilla javascript.
 
@@ -13,7 +22,7 @@ Features
 - one liner
 - onDrag and onStop callbacks
 - compatible with all modern browsers (as long as they can handle the addEventListener function)
-- handle SVG elements dragging 
+- handle SVG elements dragging
 - can constrain the movement horizontally or vertically
 - can constrain the movement inside of a virtual box with little effort
 
@@ -60,7 +69,7 @@ and, the target must be in a non static position (for instance position: relativ
 
     // simple usage
     document.getElementById('my_target').sdrag();
-    
+
 
 </script>
 
@@ -411,6 +420,15 @@ the simple drag functionality.
 Version history
 --------------------
 
+- 2020-11-015
+    - Converted to TypeScript
+    - Published as 'npm package'
+
+=======
+
+Forked from [lingtalfi/simpledrag](https://github.com/lingtalfi/simpledrag)
+
+=======
 
 - 2.2.0 - 2016-11-20
 
@@ -433,11 +451,3 @@ Version history
 - 1.0.0 - 2016-09-02
 
     Initial commit
-
-
-
-
-
-
-
-
