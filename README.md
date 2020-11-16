@@ -1,7 +1,12 @@
-Vanilla HTML Drag Support
-==================
+# Vanilla HTML Drag Support
 
-This in an updated & refactored version of [lingtalfi/simpledrag](https://github.com/lingtalfi/simpledrag) that supports typing, as the original code works like a charm but the lack of type definitions are being problematic in modern environments. All functionality and documentation from original base remains intact.
+[![Build Status](https://travis-ci.com/carlosrivera/vanilla-dragger.svg?branch=master)](https://travis-ci.com/carlosrivera/vanilla-dragger) ![npm](https://img.shields.io/npm/v/vanilla-dragger) ![npm bundle size](https://img.shields.io/bundlephobia/min/vanilla-dragger)
+
+
+
+This in an updated & refactored version of [lingtalfi/simpledrag](https://github.com/lingtalfi/simpledrag) that supports typing. The original code is tiny and works like a charm but the lack of type definitions are being problematic in modern environments (I am using this library in **Vue Components**). All functionality and documentation from original base remains intact.
+
+
 
 To install the library from `npm` run:
 
@@ -10,14 +15,15 @@ npm install --save vanilla-dragger
 ```
 
 
+
 ## Original documentation
 
 A simple drag function in vanilla javascript.
 
 
 
-Features
-------------
+### Features
+
 - lightweight: less than 60 lines of code
 - one liner
 - onDrag and onStop callbacks
@@ -28,8 +34,8 @@ Features
 
 
 
-How to use?
----------------
+###How to use?
+
 
 Simple use (don't forget to include the simpledrag.js file in your head),
 and, the target must be in a non static position (for instance position: relative)
@@ -79,14 +85,14 @@ and, the target must be in a non static position (for instance position: relativ
 ```
 
 
-onDrag and onStop callbacks
-------------------------------
+### onDrag and onStop callbacks
+
 
 You can use onDrag and/or onStop callbacks.
 Both callbacks have one argument: the currentTarget element (#my_target in the example above)
 
 
-### using the onDrag callback
+#### using the onDrag callback
 ```js
 	// using the onDrag callback
     document.getElementById('my_target').sdrag(function(el){
@@ -94,7 +100,7 @@ Both callbacks have one argument: the currentTarget element (#my_target in the e
     });
 ```
 
-### using the onStop callback
+#### using the onStop callback
 ```js
 	// using the onStop callback
     document.getElementById('my_target').sdrag(null, function(el){
@@ -102,7 +108,7 @@ Both callbacks have one argument: the currentTarget element (#my_target in the e
     });
 ```
 
-### using both the onDrag and the onStop callbacks
+#### using both the onDrag and the onStop callbacks
 ```js
     // using both the onDrag and onStop callbacks
     document.getElementById('my_target').sdrag(function(el){
@@ -114,8 +120,7 @@ Both callbacks have one argument: the currentTarget element (#my_target in the e
 
 
 
-SVG element dragging example
---------------------------------
+### SVG element dragging example
 
 The left and top css properties doesn't seem to affect the svg elements.
 But using the onDrag callback, you can move svg elements, like so:
@@ -166,8 +171,7 @@ But using the onDrag callback, you can move svg elements, like so:
 
 
 
-Make it horizontal only or vertical only
-------------------------------
+### Make it horizontal only or vertical only
 
 ```js
 document.getElementById('target1').sdrag(null, null, 'horizontal'); // the #target1 will move horizontally only
@@ -177,8 +181,7 @@ document.getElementById('target2').sdrag(null, null, 'vertical'); // the #target
 
 
 
-Additional constraints on the movement
---------------------------------------------
+### Additional constraints on the movement
 
 Another common problem that we have when dealing with dragging is: how far can the target be dragged?
 
@@ -259,8 +262,7 @@ You can drag the cursor horizontally only, from 10% of the screen width, and up 
 
 
 
-Making the phpMyAdmin's resize pane style
------------------------------------------
+### Making the phpMyAdmin's resize pane style
 
 
 The following code is a prototype of the resize pane widget that we have in phpMyAdmin.
@@ -273,7 +275,6 @@ To be honest, I found the code by accident, so be sure to check if it works in y
 
 
 http://codepen.io/lingtalfi/pen/zoNeJp
-
 
 
 
@@ -403,8 +404,7 @@ http://codepen.io/lingtalfi/pen/zoNeJp
 
 
 
-Author note
----------------
+### Author note
 
 I was about to use the drag and drop api, but I realized that I just needed a simple drag function,
 and the api seemed to have compatibility problems on mobile devices, and too complicated compared to my needs.
@@ -417,18 +417,13 @@ the simple drag functionality.
 
 
 
-Version history
---------------------
+### Version history
 
 - 2020-11-015
     - Converted to TypeScript
     - Published as 'npm package'
 
-=======
-
-Forked from [lingtalfi/simpledrag](https://github.com/lingtalfi/simpledrag)
-
-=======
+**_Forked from [lingtalfi/simpledrag](https://github.com/lingtalfi/simpledrag)_**
 
 - 2.2.0 - 2016-11-20
 
