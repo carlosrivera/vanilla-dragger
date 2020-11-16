@@ -1,0 +1,17 @@
+module.exports = {
+    root: true,
+    parser: '@typescript-eslint/parser',
+    plugins: [
+        '@typescript-eslint',
+    ],
+    extends: [
+        'eslint:recommended',
+        'plugin:@typescript-eslint/eslint-recommended',
+        'plugin:@typescript-eslint/recommended',
+    ],
+    rules: {
+      "no-console": "warn",
+      "no-debugger": "warn",
+      "consistent-this": ["error", "that"]
+    }
+}
