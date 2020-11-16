@@ -1,6 +1,6 @@
 {
   "name": "vanilla-dragger",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple drag function for HTMLElement.",
   "main": "lib/drag.js",
   "types": "lib/drag.d.ts",
